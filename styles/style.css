@@ -188,10 +188,6 @@ hr {
 }
 
 .program-list {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   gap: 10px;
   padding-top: 10px;
 }
@@ -215,23 +211,13 @@ hr {
 .program-title {
   color: #ec5242;
   font-family: "Lato", sans-serif;
+  margin-right: 50px;
+  width: 50px;
 }
 
 .program-descrip {
   font-family: "Lato", sans-serif;
   color: #fff;
-}
-
-.d-1 {
-  padding-left: 33px;
-}
-
-.d-3 {
-  padding-left: 56px;
-}
-
-.d-4 {
-  padding-left: 33px;
 }
 
 .join {
@@ -243,6 +229,13 @@ hr {
   height: 60px;
   border: none;
   margin: 45px 0;
+  transition: 0.3s;
+}
+
+.join:hover {
+  background-color: #fff;
+  color: #ec5242;
+  border: 1px solid #ec5242;
 }
 
 .our-team {
@@ -282,6 +275,11 @@ hr {
 .member-image {
   width: 120px;
   height: 120px;
+  transition: 1s;
+}
+
+.member-image:hover {
+  transform: scale(1.3);
 }
 
 .member-info h2 {
