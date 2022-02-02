@@ -62,7 +62,7 @@ a {
   top: 0;
 }
 
-.navbar-logo {
+#logo {
   display: none;
 }
 
@@ -136,6 +136,10 @@ a {
   font-family: "COCOGOOSE", sans-serif;
   font-size: 45px;
   color: #ec5242;
+}
+
+.desktop-only {
+  display: none;
 }
 
 .info {
@@ -350,4 +354,147 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1262px) {
+  .nav-menu {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    margin: 0;
+    opacity: 1;
+    gap: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  #logo {
+    display: block;
+    width: 100px;
+    height: 50px;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+    padding: 10px;
+  }
+
+  .nav-logo {
+    padding-right: 200px;
+  }
+
+  .nav-link {
+    transition: 0.5s ease;
+  }
+
+  .nav-link:hover {
+    color: #ec5242;
+  }
+
+  .ff-campaign {
+    border: 5px solid #ec5242;
+    padding: 10px;
+    color: #ec5242;
+  }
+
+  .ff-campaign:hover {
+    color: #fff;
+    background-color: #ec5242;
+    border-color: #d3d3d3;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .bg-img-desktop {
+    opacity: 0.18;
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  .small-title {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ec5242;
+  }
+
+  .big-title {
+    font-family: "COCOGOOSE", sans-serif;
+    font-size: 45px;
+    color: #ec5242;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .info {
+    margin-top: 20px;
+    border: 3px solid #d3d3d3;
+    background-color: #fdfdfd;
+    color: #272a31;
+    height: 100px;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 8px 10px;
+  }
+
+  .logo-container {
+    border: 1px solid #d3d3d3;
+    width: 60%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  .section-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .past-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 350px;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  footer {
+    background-color: #272a31;
+  }
+
+  .footer-detail p {
+    color: #fff;
+  }
 }
