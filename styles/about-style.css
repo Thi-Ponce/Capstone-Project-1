@@ -25,6 +25,10 @@ header {
   background: transparent;
 }
 
+.social {
+  display: none;
+}
+
 li {
   list-style: none;
 }
@@ -361,8 +365,39 @@ footer {
 }
 
 @media (min-width: 1262px) {
+  .social {
+    display: flex;
+    width: 100%;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #272a31;
+    width: 100%;
+    position: fixed;
+    padding-right: 75px;
+    padding-bottom: 10px;
+    z-index: 1000;
+  }
+
+  .social-item {
+    padding-left: 40px;
+  }
+
+  .socials a {
+    color: #fff;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
   .nav-menu {
-    top: 0;
+    top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
