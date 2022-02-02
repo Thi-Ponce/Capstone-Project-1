@@ -359,7 +359,7 @@ footer {
 }
 
 @media (min-width: 1262px) {
-  .social {
+  .social-container {
     display: flex;
     width: 100%;
   }
