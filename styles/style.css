@@ -18,6 +18,11 @@
   opacity: 0.18;
   position: fixed;
   z-index: -1000;
+  width: 100%;
+}
+
+.bg-img-desktop {
+  display: none;
 }
 
 header {
@@ -65,7 +70,7 @@ a {
   top: 0;
 }
 
-.navbar-logo {
+#logo {
   display: none;
 }
 
@@ -300,4 +305,251 @@ hr {
 .member-info p {
   font-family: "Lato", sans-serif;
   margin-top: 20px;
+}
+
+@media (min-width: 1262px) {
+  .nav-menu {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+    margin: 0;
+    opacity: 1;
+    gap: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  #logo {
+    display: block;
+    width: 100px;
+    height: 50px;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+    padding: 10px;
+  }
+
+  .nav-logo {
+    padding-right: 200px;
+  }
+
+  .nav-link {
+    transition: 0.5s ease;
+  }
+
+  .nav-link:hover {
+    color: #ec5242;
+  }
+
+  .ff-campaign {
+    border: 5px solid #ec5242;
+    padding: 10px;
+    color: #ec5242;
+  }
+
+  .ff-campaign:hover {
+    color: #fff;
+    background-color: #ec5242;
+    border-color: #d3d3d3;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .bg-img {
+    display: none;
+  }
+
+  .bg-img-desktop {
+    opacity: 0.18;
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px 0 0 200px;
+  }
+
+  .small-title {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ec5242;
+  }
+
+  .big-title {
+    font-family: "COCOGOOSE", sans-serif;
+    font-size: 45px;
+    color: #ec5242;
+  }
+
+  .info {
+    margin-top: 20px;
+    border: 3px solid #d3d3d3;
+    background-color: #fdfdfd;
+    color: #272a31;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 8px 10px;
+  }
+
+  .location {
+    margin-top: 20px;
+  }
+
+  .date {
+    font-family: "COCOGOOSE", sans-serif;
+    font-size: 30px;
+    color: #272a31;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  #main-program {
+    background-image: url(/Images/about-bg.PNG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section2-title {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 50px;
+  }
+
+  hr {
+    width: 30px;
+    margin-top: 5px;
+    border: 1px solid #ec5242;
+  }
+
+  .program-list {
+    gap: 5px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .program {
+    background-color: rgba(240, 234, 234, 0.075);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .program-title {
+    color: #ec5242;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    width: auto;
+  }
+
+  .program-descrip {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+  }
+
+  .join {
+    display: none;
+  }
+
+  .desktop-only {
+    padding: 60px;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+  .our-team {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  .team-title {
+    font-family: "Lato", sans-serif;
+    color: #272a31;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .card-container {
+    padding: 50px 0;
+    display: flex;
+    align-content: center;
+    background-image: url("/Images/Meteor\ logo.png");
+    background-repeat: no-repeat;
+    background-position-x: -6%;
+    background-size: 150px;
+    width: 500px;
+  }
+
+  .member-image {
+    width: 120px;
+    height: 120px;
+    transition: 1s;
+  }
+
+  .member-image:hover {
+    transform: scale(1.3);
+  }
+
+  .member-info h2 {
+    padding-bottom: 5px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .member-info h3 {
+    color: #ec5242;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+  }
+
+  .member-info hr {
+    border: 1px solid #d3d3d3;
+  }
+
+  .member-info p {
+    font-family: "Lato", sans-serif;
+    margin-top: 20px;
+  }
 }
