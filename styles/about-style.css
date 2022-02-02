@@ -17,6 +17,10 @@
   width: 100%;
 }
 
+.bg-img-desktop {
+  display: none;
+}
+
 header {
   background: transparent;
 }
