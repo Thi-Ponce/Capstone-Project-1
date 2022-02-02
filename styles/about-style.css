@@ -14,6 +14,7 @@
   opacity: 0.18;
   position: fixed;
   z-index: -1000;
+  width: 100%;
 }
 
 header {
@@ -172,4 +173,181 @@ a {
 p {
   font-family: "Lato", sans-serif;
   color: #272a31;
+}
+
+.show-logo {
+  margin-top: 50px;
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ec5242;
+}
+
+.logo-container {
+  border: 1px solid #d3d3d3;
+  width: 90%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.fanfest-logo {
+  width: 506px;
+  height: 300px;
+}
+
+.full {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+}
+
+.past-festivals {
+  padding-bottom: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.past-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.past-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 350px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.past-festival-img {
+  width: 100%;
+  height: 100%;
+}
+
+.past-descrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.past-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0.5;
+  transition: 0.5s ease-in;
+}
+
+.past-container:hover {
+  transform: scale(1.1);
+}
+
+.past-container:hover .overlay {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.past-container:hover .past-descrip {
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.partners {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #272a31;
+}
+
+.partner-header {
+  padding-bottom: 15px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+  gap: 80px;
+}
+
+.partner-logo {
+  width: 100px;
+  height: 35px;
+}
+
+footer {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+.footer-logo {
+  width: 160px;
+  height: 70px;
+}
+
+.footer-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
