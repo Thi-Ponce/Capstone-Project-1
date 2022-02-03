@@ -2,7 +2,7 @@
 
 # Capstone Project
 
-> This is the 1st capstone project I've done while studying at Microverse. It's a simple wepage made by following the requirements asked of me and personalizing the content in it. You can check a live demo here: https://thi-ponce.github.io/Capstone-Project-1/
+> This is the 1st capstone project I've done while studying at Microverse. It's a simple wepage made by following the requirements asked of me and personalizing the content in it.
 
 
 ## Built With
